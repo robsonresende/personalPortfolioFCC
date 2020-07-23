@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Style CSS -->
+    <!--<link rel="stylesheet" href="assets/css/style.css">-->
+
+    <!-- FONTAWESOME  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <title>Personal Portfolio - FCC</title>
+
+    <style media="all">
+      
+      /* stylesheet for Personal Portfolio FCC */
+
+body {
+  background-color: #ffffff;
+  font-family: Arial;
+  text-align: center;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 2.5em;
+}
+
+
+ /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+} 
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #BE3144;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  color: #ffffff;
+  height: 100%;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: #45567D;
+}
+
+
+#profile-link {
+  font-size: 35px;
+  color: #ffffff;
+}
+
+#projects {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #45567D;
+
+}
+
+#projects h2 {
+  color: #ffffff;
+}
+
+.project-tile {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  font-family: arial;
+}
+
+.project-tile button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+.project-tile button:hover {
+  opacity: 0.7;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #262729;
+
+}
+
+#welcome-section p {
+  color: #BE3144;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+#welcome-section h1 {
+  padding-top: 20%;
+  font-size: 3em;
+  color: #ffffff;
+}
+
+#contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #141925;
+  color: #ffffff;
+}
+
+    </style>
+
+  </head>
+  <body>
+
+    <nav id="navbar" class="col-s-12 col-12">
+
+      <ul>
+        <li><a href="#welcome-section">Bem-vindo</a></li>
+        <li><a href="#projects">Trabalhos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      
+    </nav>
+
+    <section id="welcome-section">
+      <h1>Eu sou Robson Resende</h1>
+      <p>Um desenvolvedor de websites</p>
+    </section><!-- FINAL DA SECTION WELCOME-SECTION ----------------------->
+
+    <section id="projects">
+
+        <h2>Alguns dos meus trabalhos</h2>
+
+        <div class="project-tile">
+          <img src="assets/img/surveyForm.png" alt="Formulário de Pesquisa" style="width:100%">
+          <p><a href="https://robsonresende.github.io/surveyFormFCC/" target="_blank"><button>Formulário de Pesquisa</button></a></p>
+        </div> 
+
+        <div class="project-tile">
+          <img src="assets/img/landingPage.png" alt="Product Landing Page" style="width:100%">
+          <p><a href="https://robsonresende.github.io/landingPageFCC/" target="_blank"><button>Landing Page</button></a></p>
+        </div> 
+      
+    </section><!-- FINAL DA SECTION PROJECTS --------------------------- -->
+
+    <section id="contact">
+      <h2>Siga meu perfil no GitHub</h2>
+      <p><a href="https://github.com/robsonresende" target="_blank" id="profile-link"><i class="fab fa-github"></i></a></p>
+    </section><!-- FINAL DA SECTION CONTACT -->
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
